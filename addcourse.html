@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Course | Personal Course Organizer</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="left">
+        <img src="images/books.png" class="h-img" alt="Books icon" />
+        <h1 class="h-h1">Personal Course Organizer</h1>
+      </div>
+
+      <nav>
+        <ul class="webs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mycourse.html">My Courses</a></li>
+          <li><a href="addcourse.html" class="active">Add Course</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+      <section class="add-course">
+
+        <div class="form-card">
+
+          <form class="course-form" action="#" method="post">
+
+            <h2>Add a New Course</h2>
+            <p>Fill in the details below to add a course to your schedule.</p>
+
+            <label for="course-name">Course Name:</label>
+            <input type="text" id="course-name" required />
+
+            <div class="instructor-credit">
+
+              <div>
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" required />
+              </div>
+
+              <div>
+                <label for="credit-hours">Credit Hours:</label>
+                <input type="number" min="1" max="10" id="credit-hours" required />
+              </div>
+
+            </div>
+
+            <label for="notes-description">Notes & Description:</label>
+            <textarea id="notes-description" rows="4"></textarea>
+
+            <div class="buttons">
+              <button class="btn2" type="submit">Add Course</button>
+
+              <button
+                class="btn3"
+                type="button"
+                onclick="location.href='mycourses.html'"
+              >
+                Cancel
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-info">
+
+      <div class="footer-brand">
+        <h2>Course Organizer</h2>
+        <p>
+          A neat place to organize your learning progress and keep everything structured.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mycourse.html">My Courses</a></li>
+          <li><a href="addcourse.html">Add Course</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+    </footer>
+
+    <footer class="footer">
+      <p class="footer-words">
+        &copy; 2026 Personal Course Organizer. All rights reserved.
+      </p>
+    </footer>
+
+  </body>
+</html>
